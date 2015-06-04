@@ -17,6 +17,7 @@ typedef enum {
 
 @interface ActionSheetView : UIView
 
+//点击按钮block回调
 @property (nonatomic,copy) void(^btnClick)(NSInteger);
 
 //头部提示文字
