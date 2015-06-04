@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ged-kf-jCL">
+                                <rect key="frame" x="20" y="169" width="280" height="43"/>
+                                <color key="backgroundColor" red="1" green="0.75114306019039789" blue="0.28213197214767016" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="AHP-R2-37G"/>
+                                </constraints>
+                                <state key="normal" title="弹出类型二,可用于替代actionsheet">
+                                    <color key="titleColor" red="0.1072175351741963" green="0.40363786322895345" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="push2:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UDc-mu-Xpn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ih6-hA-nkO">
+                                <rect key="frame" x="48" y="80" width="224" height="43"/>
+                                <color key="backgroundColor" red="0.6400774866781388" green="0.85665771045758898" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="QjI-tP-MQP"/>
+                                </constraints>
+                                <state key="normal" title="弹出类型一,适合做分享">
+                                    <color key="titleColor" red="1" green="0.3445122960969409" blue="0.99962316626884951" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="push1:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="PXi-dY-IZS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ih6-hA-nkO" secondAttribute="trailing" constant="48" id="3LF-HP-qDk"/>
+                            <constraint firstAttribute="trailing" secondItem="Ged-kf-jCL" secondAttribute="trailing" constant="20" id="FMD-VU-b9m"/>
+                            <constraint firstItem="Ih6-hA-nkO" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="60" id="GFy-xQ-kwa"/>
+                            <constraint firstItem="Ih6-hA-nkO" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="48" id="SUp-e1-8QU"/>
+                            <constraint firstItem="Ged-kf-jCL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="mjY-Rm-120"/>
+                            <constraint firstItem="Ged-kf-jCL" firstAttribute="top" secondItem="Ih6-hA-nkO" secondAttribute="bottom" constant="46" id="qYo-g6-xWU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="281"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
