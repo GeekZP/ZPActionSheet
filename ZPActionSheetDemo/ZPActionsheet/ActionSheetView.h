@@ -38,6 +38,9 @@ typedef enum {
 //除了取消按钮其他按钮的字体大小
 @property (nonatomic,assign) NSInteger otherBtnFont;
 
+//设置弹窗背景蒙板灰度(0~1)
+@property (nonatomic,assign) CGFloat duration;
+
 /**
  *  初始化actionView
  *

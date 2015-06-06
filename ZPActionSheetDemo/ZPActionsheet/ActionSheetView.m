@@ -105,6 +105,10 @@
     _cancelBtn.titleLabel.font = [UIFont systemFontOfSize:cancelBtnFont];
 }
 
+- (void)setDuration:(CGFloat)duration
+{
+    self.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:duration];
+}
 
 - (void)loadActionSheetUi
 {
