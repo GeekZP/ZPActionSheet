@@ -6,6 +6,11 @@
 2015-06-06---version 1.2
 1.新增弹窗蒙板透明度设置
 
+效果
+
+ ![image](https://github.com/GeekZP/ZPActionSheet/blob/master/1.png)
+ 
+ ![image](https://github.com/GeekZP/ZPActionSheet/blob/master/2.png)
 
 
 使用方法详见demo
